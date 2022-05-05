@@ -1,0 +1,3 @@
+RewriteEngine on
+
+RewriteRule \.(pdf|zip|txt|pcb|bin|rar|7z|rom)$ - [NC,F,L]

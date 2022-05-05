@@ -1,0 +1,117 @@
+<?php
+session_start();
+if(!isset($_SESSION['sesionLOG']))
+{
+	header('location: AdminPage.php');
+}
+if(isset($_POST['logout']))
+{
+ unset($_SESSION['sesionLOG']);
+ header('location: AdminPage.php');
+}
+
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Responsive Admin &amp; Dashboard Template based on Bootstrap 5">
+	<meta name="author" content="AdminKit">
+	<meta name="keywords" content="adminkit, bootstrap, bootstrap 5, admin, dashboard, template, responsive, css, sass, html, theme, front-end, ui kit, web">
+	
+    <link rel="stylesheet" href="LoadingPage.css">
+
+	<title>Nam Việt Law Admin</title>
+
+	<link href="dashbroad-Setting/app.css" rel="stylesheet">
+
+</head>
+
+<body>
+	<div class="wrapper">
+		<nav id="sidebar" class="sidebar js-sidebar">
+			<div class="sidebar-content js-simplebar">
+				<a class="sidebar-brand" href="Dashbroad.php">
+          			<span class="align-middle">Admin Space</span>
+        		</a>
+
+				<ul class="sidebar-nav">
+					<li class="sidebar-header">
+						Trang chính
+					</li>
+
+					<li class="sidebar-item active">
+						<a class="sidebar-link" href="Dashbroad.php">
+						<i class="align-middle" data-feather="sliders"></i> <span class="align-middle">Bảng điều khiển</span>
+						</a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link">
+						<i class="align-middle" data-feather="user"></i> <span class="align-middle">Thông tin tài khoản</span>
+						</a>
+					</li>
+
+					<li class="sidebar-header">
+						Tiện ích website
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="Dashbroad-Editpostwebsite.php">
+						<i class="align-middle" data-feather="square"></i> <span class="align-middle">Tạo bài viết website</span>
+						</a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="Dashbroad-ManagerPostWeb.php">
+						<i class="align-middle" data-feather="check-square"></i> <span class="align-middle">Quản lý bài viết website</span>
+						</a>
+					</li>
+                    <li class="sidebar-header">
+						Dịch vụ pháp lý
+					</li>
+					<li class="sidebar-item ">
+						<a class="sidebar-link" href="Dashbroad-ServiceProgress.php">
+						<i class="align-middle" data-feather="grid"></i> <span class="align-middle">Quản lý tiến độ</span>
+						</a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="Dashbroad-EditDocument.php">
+						<i class="align-middle" data-feather="align-left"></i> <span class="align-middle">Soạn thảo hồ sơ</span>
+						</a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="Dashbroad-ManagerDocumentCustomer.php">
+						<i class="align-middle" data-feather="coffee"></i> <span class="align-middle">Quản lý hồ sơ khách hàng</span>
+						</a>
+					</li>
+				</ul>
+
+			</div>
+		</nav>
+
+		<div class="main">
+		
+		<?php require "view/MENUTOP-DASHBROAD.php" ?>
+
+		<main class="content">
+			<div class="container-fluid p-0">
+
+				<h1 class="h3 mb-3"><strong>WELCOME</strong> Dashboard</h1>
+
+
+			</div>
+		</main>
+		<?php require "view/MENUBOTTOM-DASHBROAD.php" ?>
+			
+		</div>
+	</div>
+
+</body>
+<script src="dashbroad-Setting/app.js"></script>
+</html>

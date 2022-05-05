@@ -1,0 +1,202 @@
+body {
+
+
+    font-family: "Times New Roman", Times, serif !important;
+    
+}
+
+#btn-exportDOCX,#btn-exportPDF,#btn-previewPRINT,#btn-showDATADEV {
+    background: #484848;
+    color: #FFF;
+    border: #000 1px solid;
+    padding: 10px 20px;
+    font-size: 12px;
+    border-radius: 3px;
+}
+table > tbody > tr > td > p {
+    margin-left:0.5rem;
+}
+table {
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    border-top-width: 1px!important;
+border-right-width: 1px!important;
+border-bottom-width: 1px!important;
+border-left-width: 1px!important;
+}
+p {
+    margin: 0.2rem 0;
+}
+.content-footer {
+    text-align: center;
+}
+
+.source-html-outer::-webkit-scrollbar {
+    display: none;
+}
+
+.source-html-outer {
+    border: #d0d0d0 1px solid;
+    height: 90vh;
+    width: 68%;
+    margin-top:5vh;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+    border-radius: 3px;
+    padding: 0px 20px 0px 20px;
+    overflow-y: scroll;
+}
+
+
+
+.tollbarEdit {
+    width: 30%;
+    margin-left:20px;
+    margin-top:5vh;
+
+}
+//// STYLE TOOLBAR
+.boxtool {
+    width:100%;
+
+}
+/* width */
+.toolDetail::-webkit-scrollbar {
+    width: 5px;
+    }
+
+    /* Track */
+    .toolDetail::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    }
+    
+    /* Handle */
+    .toolDetail::-webkit-scrollbar-thumb {
+    background: #888; 
+    }
+
+    /* Handle on hover */
+    .toolDetail::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+    }
+    .toolDetail >h2 {
+        text-align:center;
+        margin:0.5rem 0;
+        border-radius:5px;
+        font-size:1.1rem;
+        background-color:blue;
+        color:white;
+    }
+    .toolDetail {
+        width:auto;text-align:left;margin:auto; height: 80vh;  overflow-y: scroll;    padding: 0 1rem;
+    }
+    ///////STYLE tool
+    .balloon {
+        display: inline-block;
+        width: 215px;
+        padding: 10px 0 10px 15px;
+        font-family: "Open Sans", sans;
+        font-weight: 400;
+        color: #377D6A;
+    
+        border: 0;
+        border-radius: 3px;
+        outline: 0;
+        text-indent: 60px;
+        transition: all .3s ease-in-out;
+        }
+        .balloon::-webkit-input-placeholder {
+        color: red;
+        text-indent: 0;
+        font-weight: 300;
+        }
+        .balloon + label {
+        display: inline-block;
+        position: absolute;
+        width: 100%;
+        height: fit-content;
+        top: 0;
+        left: 0;
+        padding: 5px 15px;
+        font-size: 11px;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-shadow: 0 1px 0 rgba(19, 74, 70, 0);
+        transition: all .3s ease-in-out;
+        border-radius: 3px;
+        background: rgba(122, 184, 147, 0);
+        }
+        .balloon + label:after {
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 0;
+        top: 100%;
+        left: 50%;
+        margin-left: -3px;
+        border-left: 3px solid transparent;
+        border-right: 3px solid transparent;
+        border-top: 3px solid rgba(122, 184, 147, 0);
+        transition: all .3s ease-in-out;
+        }
+
+        .balloon:focus,
+        .balloon:active {
+        color: #377D6A;
+        text-indent: 0;
+        background: #fff;
+        }
+        .balloon:focus::-webkit-input-placeholder,
+        .balloon:active::-webkit-input-placeholder {
+        color: #aaa;
+        }
+        .balloon:focus + label,
+        .balloon:active + label {
+        color: #fff;
+        text-shadow: 0 1px 0 rgba(19, 74, 70, 0.4);
+        background: #7ab893;
+        transform: translateY(-111%);
+        }
+        .balloon:focus + label:after,
+        .balloon:active + label:after {
+        border-top: 4px solid #7ab893;
+    }
+    .styleshowValue {
+        width: fit-content;
+        display: inline-block;
+        height: 20px;
+        border: 1px solid gray;
+        border-radius:5px;
+        background-color:lightblue;
+        font-weight:bold !important;
+        font-style: italic !important;
+        padding:0 0.3rem ;
+    }
+   
+    .grfiedinput > label,.grfiedinput>input {
+        width:100%;
+    }
+   .grfiedinput >a {
+       padding: 0.3rem 1rem;
+       color:white;
+       font-size:0.8rem;
+       background-color:darkred;
+       border-radius:5px;
+
+       cursor:pointer;
+   }
+   #select_box
+{
+
+ background-color:#819FF7;
+ 
+
+ border-radius:5px;
+ box-shadow:0px 0px 10px 0px grey;
+}
+select {
+    width: 100%;
+    height: 2rem;
+}

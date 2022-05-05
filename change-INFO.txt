@@ -1,0 +1,3 @@
+thay đồi 1 số text trong Tool
+
+"alt":"Alternative Text" => "alt":"Đặt tên cho hình ảnh ( bắt buộc cho SEO)"
